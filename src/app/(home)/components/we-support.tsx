@@ -10,7 +10,7 @@ export const WeSupport = () => {
       variant="bottom"
       className="relative flex flex-col items-center justify-center gap-4 bg-[url('/images/cone-bg-mobile.svg')] bg-cover bg-[position:top_center] bg-no-repeat pt-[70px] pb-[100px] text-center max-md:px-4 lg:bg-[url('/images/cone-bg.svg')]"
     >
-      <div className="absolute top-0 left-0 z-0 h-[160px] w-[1000px] bg-[#691EE2] blur-[300px]"></div>
+      <div className="absolute top-0 left-0 lg:left-[50%] translate-x-[0] lg:translate-x-[-50%] z-0 h-[160px] w-[100%] lg:w-[1000px] bg-[#691EE2] blur-[300px] max-md:left-0"></div>
       <Title className="relative z-10 text-4xl lg:text-5xl leading-[150%]">
         We Support Your Success
       </Title>
