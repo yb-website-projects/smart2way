@@ -1,9 +1,17 @@
-import { Benefits, Deliver, Hero, Solutions, WeSupport } from './components';
+import {
+  Benefits,
+  Deliver,
+  Hero,
+  Solutions,
+  WeComitted,
+  WeSupport,
+} from './components';
 
 export default function Home() {
   return (
     <main>
       <Hero />
+      <WeComitted />
       <Solutions />
       <Benefits />
       <Deliver />
