@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+:root {
+  --primary-color: #a7531c;
+  --secondary-color: rgba(255, 255, 255, 0.7);
+  --black-60: #898ca9;
+}
+
+@theme inline {
+  --color-primary: var(--primary-color);
+  --color-secondary: var(--secondary-color);
+  --color-black-60: var(--black-60);
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
