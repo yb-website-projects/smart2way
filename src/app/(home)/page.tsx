@@ -2,7 +2,7 @@ import { Benefits, Deliver, Hero, Solutions, WeSupport } from './components';
 
 export default function Home() {
   return (
-    <main className="overflow-x-hidden">
+    <main>
       <Hero />
       <Solutions />
       <Benefits />
