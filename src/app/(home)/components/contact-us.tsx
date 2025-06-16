@@ -4,12 +4,13 @@ import Image from 'next/image';
 
 import { ContactForm } from '@/features/contact-form/ui/form';
 
+import { Logo } from '@/shared/ui/components/logo';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
 
 export const ContactUs = () => {
   return (
-    <section className="relative flex h-[800px] gap-[60px] overflow-hidden px-[100px] pt-[120px] pb-[80px] max-lg:h-[950px] max-lg:flex-col max-md:px-4 max-md:py-[80px]">
+    <section className="relative flex h-[800px] gap-[60px] overflow-hidden px-[100px] pt-[120px] pb-[80px] max-lg:h-[1000px] max-lg:flex-col max-md:px-4 max-md:py-[80px]">
       <section className="flex flex-col gap-4">
         <Title as="h2" size="6xl">
           Have questions, or are you ready to take the next step?
@@ -27,6 +28,9 @@ export const ContactUs = () => {
         </Title>
         <ContactForm />
       </section>
+      <div className="absolute bottom-[5%] left-1/2 z-10 -translate-x-1/2 max-md:bottom-[2%]">
+        <Logo />
+      </div>
       <Image
         className="absolute inset-0 bottom-0 mt-auto h-[200px] w-full"
         src="/images/contact-sphere.svg"
