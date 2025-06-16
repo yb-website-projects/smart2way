@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
+import { Toaster } from 'sonner';
 
 import { cn } from '@/shared/lib/utils/styles';
 
@@ -43,7 +44,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(satoshi.className, 'antialiased')}>{children}</body>
+      <body className={cn(satoshi.className, 'antialiased')}>
+        {children}
+        <Toaster />
+      </body>
     </html>
   );
 }

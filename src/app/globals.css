@@ -4,12 +4,24 @@
   --primary-color: #a7531c;
   --secondary-color: rgba(255, 255, 255, 0.7);
   --black-60: #898ca9;
+  --grey-12: #1c1d22;
+  --danger: rgba(104, 0, 0, 0.5);
+  --error: rgba(104, 0, 0, 0.2);
 }
 
 @theme inline {
   --color-primary: var(--primary-color);
   --color-secondary: var(--secondary-color);
   --color-black-60: var(--black-60);
+  --color-grey-12: var(--grey-12);
+  --color-danger: var(--danger);
+  --color-error: var(--error);
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #1c1d22 inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 body {

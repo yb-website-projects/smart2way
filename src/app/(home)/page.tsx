@@ -1,5 +1,6 @@
 import {
   Benefits,
+  ContactUs,
   Deliver,
   Hero,
   Solutions,
@@ -16,6 +17,7 @@ export default function Home() {
       <Benefits />
       <Deliver />
       <WeSupport />
+      <ContactUs />
     </main>
   );
 }
