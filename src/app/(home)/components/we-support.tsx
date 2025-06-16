@@ -8,10 +8,13 @@ export const WeSupport = () => {
   return (
     <FadeIn
       variant="bottom"
-      className="relative flex flex-col items-center justify-center gap-4 overflow-hidden py-[70px] text-center max-md:px-4"
+      className="relative flex flex-col items-center justify-center gap-4 bg-[url('/images/cone-bg-mobile.svg')] bg-cover bg-[position:top_center] bg-no-repeat pt-[70px] pb-[100px] text-center max-md:px-4 lg:bg-[url('/images/cone-bg.svg')]"
     >
-      <Title size="5xl">We Support Your Success</Title>
-      <Text className="mx-auto w-[780px] text-center max-lg:w-full">
+      <div className="absolute top-0 left-0 z-0 h-[160px] w-[1000px] bg-[#691EE2] blur-[300px]"></div>
+      <Title className="relative z-10 text-4xl lg:text-5xl leading-[150%]">
+        We Support Your Success
+      </Title>
+      <Text className="relative z-10 mx-auto w-[780px] text-center text-sm max-lg:w-full lg:text-base">
         We focus on connecting you with a broker offering strong functionality,
         low costs, and professional service. With our experience, we’ll help you
         avoid scams and risks – making sure you’re in good hands.
