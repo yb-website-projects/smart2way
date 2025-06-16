@@ -9,18 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tanstack/react-form": "^1.12.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.18.1",
+    "google-libphonenumber": "^3.2.40",
+    "googleapis": "^148.0.0",
     "next": "15.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwind-merge": "^3.3.1"
+    "sonner": "^2.0.5",
+    "tailwind-merge": "^3.3.1",
+    "valibot": "^1.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@next/eslint-plugin-next": "^15.3.3",
     "@tailwindcss/postcss": "^4",
+    "@types/google-libphonenumber": "^7.4.30",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
