@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 import { FadeIn } from '@/shared/ui/components/fade-in';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
@@ -8,13 +10,13 @@ export const WeComitted = () => {
   return (
     <FadeIn
       variant="bottom"
-      className="flex flex-col gap-8 px-[100px] py-10 max-md:px-4 max-md:py-10"
+      className="flex flex-col gap-8 overflow-hidden px-[100px] py-10 max-md:px-4 max-md:py-10"
     >
       <Title as="h2" size="6xl">
         We’re Committed to Guiding You
       </Title>
-      <section className="flex gap-8 max-md:flex-col">
-        <section className="relative flex h-[600px] gap-8 overflow-hidden">
+      <section className="flex w-full gap-8 max-md:flex-col">
+        <section className="relative flex h-[600px] w-1/2 gap-8 overflow-hidden max-md:h-[400px] max-md:w-full">
           <FadeIn
             variant="bottom"
             className="rounded-4xl border border-white/50 p-10"
@@ -38,7 +40,7 @@ export const WeComitted = () => {
             </Text>
           </FadeIn>
           <svg
-            className="absolute bottom-[10px] left-[-10%] z-0"
+            className="absolute bottom-[10px] left-[-10%] z-0 max-md:h-[500px] max-md:w-[1000px]"
             xmlns="http://www.w3.org/2000/svg"
             width="1930"
             height="959"
@@ -144,21 +146,35 @@ export const WeComitted = () => {
             </defs>
           </svg>
         </section>
-        <section className="relative flex h-[600px] gap-8 rounded-4xl bg-[url('/images/gradient-bg.jpg')] bg-cover bg-center bg-no-repeat">
+        <section className="relative flex h-[600px] w-1/2 gap-8 rounded-4xl border border-white/50 bg-[linear-gradient(0deg,rgba(0,0,0,0.50)_0%,rgba(0,0,0,0.50)_100%),url('/images/sunset-bg.jpg')] bg-[size:351.812%_236.134%] bg-[position:-1483.903px_-801.239px] bg-no-repeat max-md:h-[400px] max-md:w-full">
+          <Image
+            className="absolute -top-[20%] -right-[24%] rotate-[-47.35deg]"
+            src="/images/lite-coin.png"
+            alt="lite-coin"
+            width={549}
+            height={549}
+          />
           <FadeIn
             variant="bottom"
-            className="rounded-4xl border border-white/50 bg-black/50 p-10"
+            className="mt-auto flex w-full flex-col gap-2.5 p-10"
           >
-            <Title as="h2" size="4xl" weight={400} uppercase>
-              Trusted Results
+            <Title
+              as="h2"
+              size="4xl"
+              weight={400}
+              className="leading-[71.5%]"
+              uppercase
+            >
+              Best-In-Class Option
             </Title>
-            <Text color="grey">
-              <span className="text-white">A dedicated search partner</span>
-              <br /> Our broker selection service is built to match traders with
-              ideal brokerage partners. Smart2Way compiles recommendations based
-              on industry expertise and firsthand experience. You’ll receive
-              thorough details outlining each option’s advantages and potential
-              drawbacks.
+            <Text color="grey" className="relative z-20">
+              <span className="text-white">
+                A more efficient way to discover brokers
+              </span>
+              <br /> Choosing a reliable broker involves evaluating critical
+              aspects such as pricing, tools, service quality, etc. At Smart2Way
+              , we assess these variables for you. We aim to connect you with
+              the broker that delivers the most value to your trading journey.
             </Text>
           </FadeIn>
         </section>

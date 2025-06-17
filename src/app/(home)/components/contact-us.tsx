@@ -16,10 +16,10 @@ export const ContactUs = () => {
           Have questions, or are you ready to take the next step?
         </Title>
         <Text>
-          Fill out the form below, and a member of our team will reach out
-          shortly. Whether you&apos;re looking for guidance, need more details,
-          or want help choosing the right broker, we&apos;re here to support you
-          every step of the way.
+          Fill out the form, and a member of our team will reach out shortly.
+          Whether you&apos;re looking for guidance, need more details, or want
+          help choosing the right broker, we&apos;re here to support you every
+          step of the way.
         </Text>
       </section>
       <section className="relative z-20 flex flex-col gap-4">

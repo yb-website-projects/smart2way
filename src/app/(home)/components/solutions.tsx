@@ -21,7 +21,7 @@ const items = [
   {
     icon: StarIcon,
     title: 'Leverage-enabled trading',
-    text: 'Maximize your exposure with controlled leverage options tailored to your trading goals and risk tolerance.',
+    text: 'Maximize your exposure with controlled leverage options tailored to your trading goals\nand risk tolerance.',
   },
   {
     icon: WebIcon,
