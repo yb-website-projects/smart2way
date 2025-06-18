@@ -8,7 +8,7 @@ import { cn } from '@/shared/lib/utils/styles';
 import { DotStarIcon } from '@/shared/ui/icons/dot-star';
 
 const textFieldVariants = cva(
-  'text-base rounded-[4px] px-4 w-[287px] max-lg:w-full flex items-center justify-between py-1.5 font-normal text-white/20 border border-grey-12 bg-grey-12 transition-all duration-300 focus:outline-none',
+  'text-base rounded-[4px] px-4 w-[287px] max-lg:w-full flex items-center justify-between py-2.5 font-normal text-white/90 border border-grey-12 bg-grey-12 transition-all duration-300 focus:outline-none',
   {
     variants: {
       intent: {
