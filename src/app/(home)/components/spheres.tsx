@@ -7,7 +7,7 @@ import { FadeIn } from '@/shared/ui/components/fade-in';
 export const MainSphere = () => (
   <FadeIn>
     <Image
-      className="relative z-10 h-[800px] w-full object-cover"
+      className="relative z-10 h-[80%] w-full object-cover"
       src="/images/sphere.svg"
       alt="sphere"
       width={1440}

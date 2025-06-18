@@ -5,5 +5,5 @@ export const PinkFilter = () => (
 );
 
 export const BlueFilter = () => (
-  <div className="absolute inset-0 z-0 mx-auto h-[750px] w-[50%] bg-gradient-to-b from-[rgba(24,75,255,0)] to-[#174AFF] blur-[100px]" />
+  <div className="absolute inset-0 z-0 mx-auto h-[85%] w-[50%] bg-gradient-to-b from-[rgba(24,75,255,0)] to-[#174AFF] blur-[100px]" />
 );
