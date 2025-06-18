@@ -6,7 +6,7 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/shared/lib/utils/styles';
 
 const textAreaVariants = cva(
-  'text-base rounded-[4px] max-lg:w-full px-4 w-[590px] h-[120px] flex items-center justify-between py-1.5 font-normal text-white/20 border border-grey-12 bg-grey-12 transition-all duration-300 focus:outline-none',
+  'text-base rounded-[4px] max-lg:w-full px-4 w-[590px] h-[120px] flex items-center justify-between py-1.5 font-normal text-white/90 border border-grey-12 bg-grey-12 transition-all duration-300 focus:outline-none',
   {
     variants: {
       intent: {

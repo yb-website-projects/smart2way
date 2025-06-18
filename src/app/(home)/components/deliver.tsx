@@ -116,7 +116,7 @@ const Layout = ({
 }) => (
   <div
     className={cn(
-      'border-[rgb(160 156 153 / 0.7)] flex flex-col rounded-4xl border-[0.5px] p-6 transition-all duration-300 hover:bg-[radial-gradient(293.5%_173.84%_at_1.56%_5.47%,#B17BF9_0%,#3B67B1_100%)]',
+      'flex flex-col rounded-4xl border-[0.25px] border-white/30 p-6 transition-all duration-300 hover:bg-[radial-gradient(293.5%_173.84%_at_1.56%_5.47%,#B17BF9_0%,#3B67B1_100%)]',
       className,
     )}
   >

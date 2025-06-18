@@ -12,7 +12,7 @@ import { RoseStar, SimpleStar } from './stars';
 
 export const Hero = () => {
   return (
-    <section className="relative w-full overflow-hidden">
+    <section className="relative w-full overflow-hidden pb-[100px]">
       <PinkFilter />
       <BlueFilter />
       <RoseStar />
