@@ -1,12 +1,13 @@
 'use client';
 
 import { useForm } from '@/shared/lib/forms';
-import { notifySuccess } from '@/shared/lib/toast';
+import { notifyError, notifySuccess } from '@/shared/lib/toast';
 import { FormRow } from '@/shared/ui/components/form-row';
 import { Button } from '@/shared/ui/kit/button';
 import { TextArea } from '@/shared/ui/kit/text-area';
 import { TextField } from '@/shared/ui/kit/text-field';
 
+import { sendContactForm } from '../api/send-contact-form';
 import { contactSchema } from '../model/schema';
 
 export const ContactForm = () => {
@@ -22,9 +23,14 @@ export const ContactForm = () => {
       onChange: contactSchema,
     },
     onSubmit: async ({ value }) => {
-      console.log(value);
-      notifySuccess('Your message has been sent successfully');
-      reset();
+      const { status } = await sendContactForm(value);
+
+      if (status === 'OK') {
+        notifySuccess('Your message has been sent successfully');
+        reset();
+      } else {
+        notifyError('Failed to send message. Try again later.');
+      }
     },
   });
 
