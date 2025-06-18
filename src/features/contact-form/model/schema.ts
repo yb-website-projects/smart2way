@@ -15,3 +15,5 @@ export const contactSchema = v.object({
   ),
   message: v.pipe(v.string(), v.minLength(1, 'Please enter your message.')),
 });
+
+export type ContactForm = v.InferOutput<typeof contactSchema>;
