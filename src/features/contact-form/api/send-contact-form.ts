@@ -2,6 +2,8 @@
 
 import { google } from 'googleapis';
 
+import { contactFormBody } from '@/features/email-letters/components/contact-form-body';
+
 import {
   EMAIL_CLIENT_ID,
   EMAIL_CLIENT_SECRET,
@@ -54,6 +56,18 @@ export async function sendContactForm({
       requestBody: {
         raw: adminBody,
       },
+    });
+
+    const userBody = makeEmailBody({
+      to: email,
+      from: EMAIL_USER,
+      subject: 'Thank you for registering with Smart2Way!',
+      message: contactFormBody(),
+    });
+
+    await gmail.users.messages.send({
+      userId: 'me',
+      requestBody: { raw: userBody },
     });
 
     if (res.status !== 200) {
