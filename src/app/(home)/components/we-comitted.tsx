@@ -10,7 +10,7 @@ export const WeComitted = () => {
   return (
     <FadeIn
       variant="bottom"
-      className="flex flex-col gap-8 overflow-hidden px-[100px] py-10 max-md:px-4 max-md:py-10"
+      className="flex flex-col gap-8 overflow-hidden px-[100px] py-10 max-md:px-4 max-md:py-10 max-md:pt-0 max-md:pb-10"
     >
       <Title as="h2" size="6xl">
         We’re Committed to Guiding You
@@ -148,7 +148,7 @@ export const WeComitted = () => {
         </section>
         <section className="relative flex h-[600px] w-1/2 gap-8 rounded-4xl border border-white/50 bg-[linear-gradient(0deg,rgba(0,0,0,0.50)_0%,rgba(0,0,0,0.50)_100%),url('/images/sunset-bg.jpg')] bg-[size:351.812%_236.134%] bg-[position:-1483.903px_-801.239px] bg-no-repeat max-md:h-[400px] max-md:w-full">
           <Image
-            className="absolute -top-[20%] -right-[24%] rotate-[-47.35deg]"
+            className="absolute -top-[20%] -right-[24%] z-0 rotate-[-47.35deg] max-md:h-[255px] max-md:w-[255px]"
             src="/images/lite-coin.png"
             alt="lite-coin"
             width={549}
@@ -162,7 +162,7 @@ export const WeComitted = () => {
               as="h2"
               size="4xl"
               weight={400}
-              className="leading-[71.5%]"
+              className="z-10 leading-[71.5%]"
               uppercase
             >
               Best-In-Class Option
