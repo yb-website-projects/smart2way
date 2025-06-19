@@ -7,7 +7,7 @@ import { FadeIn } from '@/shared/ui/components/fade-in';
 export const MainSphere = () => (
   <FadeIn>
     <Image
-      className="relative z-10 h-[80%] w-full object-cover"
+      className="relative z-10 h-[80%] w-full object-cover max-md:h-[700px]"
       src="/images/sphere.svg"
       alt="sphere"
       width={1440}
@@ -19,7 +19,7 @@ export const MainSphere = () => (
 export const GreySphere = () => (
   <FadeIn
     variant="right"
-    className="absolute top-[74%] right-[-10px] z-10 h-[107px] w-[97px] -translate-y-1/2"
+    className="absolute top-[74%] right-[-10px] z-10 h-[107px] w-[97px] -translate-y-1/2 max-md:hidden"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -154,7 +154,7 @@ export const GreySphere = () => (
 export const OrangeSphere = () => (
   <FadeIn
     variant="left"
-    className="absolute top-[64%] left-[50px] z-10 h-[107px] w-[97px] -translate-x-1/2 -translate-y-1/2"
+    className="absolute top-[64%] left-[50px] z-10 h-[107px] w-[97px] -translate-x-1/2 -translate-y-1/2 max-md:hidden"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
