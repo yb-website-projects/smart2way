@@ -40,8 +40,8 @@ const items = [
   },
   {
     icon: TwoCircles,
-    title: 'Demo account access',
-    text: 'Practice and explore trading strategies in a risk-free environment before committing to real funds.',
+    title: 'Advanced risk management tools',
+    text: 'Secure your trades with intelligent features that help you manage risk in any market condition.',
   },
 ];
 
