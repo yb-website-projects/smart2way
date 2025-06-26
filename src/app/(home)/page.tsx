@@ -11,18 +11,15 @@ import {
 } from './components';
 
 export const metadata: Metadata = {
-  title: 'Smart2Way | Find the Right Broker for Your Trading Strategy',
   description:
     'Smart2Way helps traders discover the most suitable brokers worldwide. Save time, reduce costs, and access expert guidance to optimize your trading journey with our broker search solutions.',
   openGraph: {
-    title: 'Smart2Way | Find the Right Broker for Your Trading Strategy',
     description:
       'Smart2Way helps traders discover the most suitable brokers worldwide. Save time, reduce costs, and access expert guidance to optimize your trading journey with our broker search solutions.',
     images: 'https://smart2way.io/meta.png',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Smart2Way | Find the Right Broker for Your Trading Strategy',
     description:
       'Smart2Way helps traders discover the most suitable brokers worldwide. Save time, reduce costs, and access expert guidance to optimize your trading journey with our broker search solutions.',
     images: ['https://smart2way.io/meta.png'],
