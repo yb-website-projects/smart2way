@@ -1,5 +1,3 @@
-import type { Metadata } from 'next';
-
 import {
   Benefits,
   ContactUs,
@@ -9,22 +7,6 @@ import {
   WeComitted,
   WeSupport,
 } from './components';
-
-export const metadata: Metadata = {
-  description:
-    'Smart2Way helps traders discover the most suitable brokers worldwide. Save time, reduce costs, and access expert guidance to optimize your trading journey with our broker search solutions.',
-  openGraph: {
-    description:
-      'Smart2Way helps traders discover the most suitable brokers worldwide. Save time, reduce costs, and access expert guidance to optimize your trading journey with our broker search solutions.',
-    images: 'https://smart2way.io/meta.png',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    description:
-      'Smart2Way helps traders discover the most suitable brokers worldwide. Save time, reduce costs, and access expert guidance to optimize your trading journey with our broker search solutions.',
-    images: ['https://smart2way.io/meta.png'],
-  },
-};
 
 export default function Home() {
   return (
