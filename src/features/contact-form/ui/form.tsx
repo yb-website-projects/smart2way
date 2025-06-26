@@ -1,7 +1,9 @@
 'use client';
 
+import { useState } from 'react';
+
 import { useForm } from '@/shared/lib/forms';
-import { notifyError, notifySuccess } from '@/shared/lib/toast';
+import { notifyError } from '@/shared/lib/toast';
 import { FormRow } from '@/shared/ui/components/form-row';
 import { Button } from '@/shared/ui/kit/button';
 import { TextArea } from '@/shared/ui/kit/text-area';
@@ -9,8 +11,11 @@ import { TextField } from '@/shared/ui/kit/text-field';
 
 import { sendContactForm } from '../api/send-contact-form';
 import { contactSchema } from '../model/schema';
+import { ThankYouDialog } from './dialog';
 
 export const ContactForm = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
   const { Field, Subscribe, handleSubmit, reset } = useForm({
     defaultValues: {
       firstName: '',
@@ -26,7 +31,7 @@ export const ContactForm = () => {
       const { status } = await sendContactForm(value);
 
       if (status === 'OK') {
-        notifySuccess('Your message has been sent successfully');
+        setIsOpen(true);
         reset();
       } else {
         notifyError('Failed to send message. Try again later.');
@@ -118,6 +123,7 @@ export const ContactForm = () => {
           </Button>
         )}
       </Subscribe>
+      <ThankYouDialog isOpen={isOpen} setIsOpen={setIsOpen} />
     </form>
   );
 };

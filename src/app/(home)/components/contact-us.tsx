@@ -1,12 +1,18 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
-
-import { ContactForm } from '@/features/contact-form/ui/form';
 
 import { Logo } from '@/shared/ui/components/logo';
 import { Text } from '@/shared/ui/kit/text';
 import { Title } from '@/shared/ui/kit/title';
+
+const ContactForm = dynamic(
+  () => import('@/features/contact-form/ui/form').then(mod => mod.ContactForm),
+  {
+    ssr: false,
+  },
+);
 
 export const ContactUs = () => {
   return (
