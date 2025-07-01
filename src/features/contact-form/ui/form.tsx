@@ -34,6 +34,7 @@ export const ContactForm = () => {
 
       if (status === 'OK') {
         setIsOpen(true);
+        setIsOpen(true);
         reset();
       } else {
         notifyError('Failed to send message. Try again later.');
@@ -125,6 +126,7 @@ export const ContactForm = () => {
           </Button>
         )}
       </Subscribe>
+      <ThankYouDialog isOpen={isOpen} setIsOpen={setIsOpen} />
       <ThankYouDialog isOpen={isOpen} setIsOpen={setIsOpen} />
     </form>
   );
