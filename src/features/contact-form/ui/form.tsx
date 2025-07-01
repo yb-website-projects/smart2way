@@ -16,6 +16,8 @@ import { ThankYouDialog } from './dialog';
 export const ContactForm = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
+  setTimeout(() => setIsOpen(true), 2000);
+
   const { Field, Subscribe, handleSubmit, reset } = useForm({
     defaultValues: {
       firstName: '',
