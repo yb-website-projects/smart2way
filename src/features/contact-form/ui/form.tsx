@@ -16,6 +16,8 @@ import { ThankYouDialog } from './dialog';
 export const ContactForm = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
+  setTimeout(() => setIsOpen(true), 2000);
+
   const { Field, Subscribe, handleSubmit, reset } = useForm({
     defaultValues: {
       firstName: '',
@@ -31,6 +33,7 @@ export const ContactForm = () => {
       const { status } = await sendContactForm(value);
 
       if (status === 'OK') {
+        setIsOpen(true);
         setIsOpen(true);
         reset();
       } else {
@@ -123,6 +126,7 @@ export const ContactForm = () => {
           </Button>
         )}
       </Subscribe>
+      <ThankYouDialog isOpen={isOpen} setIsOpen={setIsOpen} />
       <ThankYouDialog isOpen={isOpen} setIsOpen={setIsOpen} />
     </form>
   );
