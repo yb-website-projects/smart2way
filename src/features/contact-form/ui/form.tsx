@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { useForm } from '@/shared/lib/forms';
 import { notifyError } from '@/shared/lib/toast';
@@ -16,7 +16,10 @@ import { ThankYouDialog } from './dialog';
 export const ContactForm = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  setTimeout(() => setIsOpen(true), 2000);
+  useEffect(() => {
+    const timeout = setTimeout(() => setIsOpen(true), 2000);
+    return () => clearTimeout(timeout);
+  }, []);
 
   const { Field, Subscribe, handleSubmit, reset } = useForm({
     defaultValues: {
