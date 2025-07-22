@@ -1,5 +1,7 @@
 import type { ReactNode } from 'react';
 import localFont from 'next/font/local';
+import Script from 'next/script';
+import { GoogleTagManager } from '@next/third-parties/google';
 import { Toaster } from 'sonner';
 
 import { cn } from '@/shared/lib/utils/styles';
@@ -38,6 +40,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <GoogleTagManager gtmId="G-97NR4S7NVN" />
+      </head>
       <body className={cn(satoshi.className, 'antialiased')}>
         {children}
         <Toaster />
