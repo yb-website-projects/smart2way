@@ -42,6 +42,9 @@ export default function RootLayout({
       <head>
         <GoogleTagManager gtmId="G-97NR4S7NVN" />
       </head>
+      <head>
+        <GoogleTagManager gtmId="G-97NR4S7NVN" />
+      </head>
       <body className={cn(satoshi.className, 'antialiased')}>
         {children}
         <Toaster />
