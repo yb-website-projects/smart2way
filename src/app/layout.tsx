@@ -1,6 +1,5 @@
 import type { ReactNode } from 'react';
 import localFont from 'next/font/local';
-import Script from 'next/script';
 import { GoogleTagManager } from '@next/third-parties/google';
 import { Toaster } from 'sonner';
 
